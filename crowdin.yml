@@ -13,3 +13,9 @@ files:
     translation: /config/locales/devise.%two_letters_code%.yml
   - source: /config/locales/doorkeeper.en.yml
     translation: /config/locales/doorkeeper.%two_letters_code%.yml
+  - source: '*en.*'
+    ignore:
+      - '*open*'
+      - '*fullscreen*'
+      - '*token*'
+    translation: '%original_path%'
